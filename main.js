@@ -82,3 +82,8 @@ const cartCount = document.getElementById('cart-count');
 
 // Initialize the cart item count
 let cartItemCount = 0;
+
+//Initialize product element array
+const productElements = [];
+
+//Loop over products and create Elements
