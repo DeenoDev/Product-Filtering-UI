@@ -98,9 +98,11 @@ products.forEach((product) => {
          <button class="status bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0">Add to Cart</button>
          </div>
          <p class="text-xl">${product.name}</p>
-         <strong>$${product.price}</strong>
+         <strong>$${product.price.toLocaleString()}</strong>
 
-    `
+    `;
+
+    productElements.push(productElement);
 
 
-})
+});
