@@ -86,4 +86,13 @@ let cartItemCount = 0;
 //Initialize product element array
 const productElements = [];
 
-//Loop over products and create Elements
+//Loop over products and create an Elements
+products.forEach((product) => {
+    const productElement = document.createElement('div');
+
+    productElement.className = 'item space-y-2';
+
+    console.log(productElement);
+
+
+})
