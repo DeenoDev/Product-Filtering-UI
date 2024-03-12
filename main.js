@@ -103,6 +103,7 @@ products.forEach((product) => {
     `;
 
     productElements.push(productElement);
+    productsWrapper.appendChild(productElement);
 
 
 });
