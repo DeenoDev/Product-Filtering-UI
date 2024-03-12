@@ -88,6 +88,17 @@ const productElements = [];
 
 //Loop over products and create an Elements
 products.forEach((product) => {
+    const productElement = createProductElement(product);
+
+    productElements.push(productElement);
+    productsWrapper.appendChild(productElement);
+
+
+});
+
+//Create product element
+function createProductElement(product) {
+
     const productElement = document.createElement('div');
 
     productElement.className = 'item space-y-2';
@@ -102,8 +113,5 @@ products.forEach((product) => {
 
     `;
 
-    productElements.push(productElement);
-    productsWrapper.appendChild(productElement);
-
-
-});
+    return productElement;
+}
