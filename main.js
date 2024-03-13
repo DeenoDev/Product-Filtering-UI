@@ -129,7 +129,9 @@ function updateCart(e){
   } else {
     //Add to Cart
     statusEl.classList.add('added');
-    statusEl.innerText = 'remove from cart';
+    statusEl.innerText = 'Remove From Cart';
+    statusEl.classList.remove('bg-gray-800');
+    statusEl.classList.add('bg-red-600');
   }
 
 }
