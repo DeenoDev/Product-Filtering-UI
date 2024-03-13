@@ -124,6 +124,10 @@ function updateCart(e){
 
   if(statusEl.classList.contains('added')){
     //Remove from Cart
+    statusEl.classList.remove('added');
+    statusEl.innerText = 'Add To Cart';
+    statusEl.classList.remove('bg-red-600');
+    statusEl.classList.add('bg-gray-800');
     
 
   } else {
