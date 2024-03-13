@@ -128,6 +128,8 @@ function updateCart(e){
     statusEl.innerText = 'Add To Cart';
     statusEl.classList.remove('bg-red-600');
     statusEl.classList.add('bg-gray-800');
+
+    cartItemCount --;
     
 
   } else {
@@ -136,6 +138,8 @@ function updateCart(e){
     statusEl.innerText = 'Remove From Cart';
     statusEl.classList.remove('bg-gray-800');
     statusEl.classList.add('bg-red-600');
+
+    cartItemCount ++;
   }
 
 }
