@@ -117,3 +117,10 @@ function createProductElement(product) {
 
     return productElement;
 }
+
+//Add or remove item from cart
+function updateCart(e){
+  const statusEl = e.target;
+  console.log(statusEl);
+
+}
