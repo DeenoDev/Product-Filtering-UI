@@ -113,5 +113,7 @@ function createProductElement(product) {
 
     `;
 
+    productElement.querySelector('.status').addEventListener('click', updateCart);
+
     return productElement;
 }
