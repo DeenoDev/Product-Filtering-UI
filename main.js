@@ -142,4 +142,7 @@ function updateCart(e){
     cartItemCount ++;
   }
 
+  //Update Cart Item Count
+  cartCount.innerText = cartItemCount.toString();
+
 }
