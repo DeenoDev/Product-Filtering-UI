@@ -164,5 +164,12 @@ function filterProducts(){
   //Check to see if the product matches the search or the checked categories
   const matchesSearchTerm = product.name.toLowerCase().includes(searchTerm);
   const isInCheckedCategory = checkedCategories.length === 0 || checkedCategories.includes(product.category);
+
+  //Show or hide product based on matches
+  if(matchesSearchTerm && isInCheckedCategory){
+    productElement.classList.remove('hidden');
+  } else {
+    productElement.classList.add('hidden');
+  }
   });
 }
