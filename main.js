@@ -153,10 +153,9 @@ function updateCart(e) {
 //Filter products by checkboxes and search input
 function filterProducts(){
   //Get search term
-  const searchTerm = searchInput.ariaValueMax.trim().toLocaleLowerCase();
+  const searchTerm = searchInput.value.trim().toLowerCase();
   //Get checked categories
-  const checkedCategories = Array.from(checkboxes)
-  .filter((check) => check.checked);
+  const checkedCategories = Array.from(checkboxes).filter((check) => check.checked).map((check) => check.id);
 
-  console.log(checkedCategories);
+  //Loop over products and check for matches
 }
