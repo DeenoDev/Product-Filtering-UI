@@ -86,6 +86,9 @@ let cartItemCount = 0;
 //Initialize product element array
 const productElements = [];
 
+//Event listeners for filtering
+
+
 //Loop over products and create an Elements
 products.forEach((product) => {
     const productElement = createProductElement(product);
@@ -118,31 +121,29 @@ function createProductElement(product) {
     return productElement;
 }
 
-//Add or remove item from cart
-function updateCart(e){
+// Toggle add/remove from cart
+function updateCart(e) {
   const statusEl = e.target;
 
-  if(statusEl.classList.contains('added')){
-    //Remove from Cart
+  if (statusEl.classList.contains('added')) {
+    // Remove from cart
     statusEl.classList.remove('added');
     statusEl.innerText = 'Add To Cart';
     statusEl.classList.remove('bg-red-600');
     statusEl.classList.add('bg-gray-800');
 
-    cartItemCount --;
-    
-
+    cartItemCount--;
   } else {
-    //Add to Cart
+    // Add to cart
     statusEl.classList.add('added');
     statusEl.innerText = 'Remove From Cart';
     statusEl.classList.remove('bg-gray-800');
     statusEl.classList.add('bg-red-600');
 
-    cartItemCount ++;
+    cartItemCount++;
+    
   }
 
-  //Update Cart Item Count
+  // Update cart item count
   cartCount.innerText = cartItemCount.toString();
-
 }
