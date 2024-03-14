@@ -159,7 +159,7 @@ function filterProducts(){
 
   //Loop over products and check for matches
   productElements.forEach((product, index) => {
-  const product = product[index];
+  const product = products[index];
 
   //Check to see if the product matches the search or the checked categories
   const matchesSearchTerm = product.name.toLowerCase().includes(searchTerm);
