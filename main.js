@@ -149,3 +149,14 @@ function updateCart(e) {
   // Update cart item count
   cartCount.innerText = cartItemCount.toString();
 }
+
+//Filter products by checkboxes and search input
+function filterProducts(){
+  //Get search term
+  const searchTerm = searchInput.ariaValueMax.trim().toLocaleLowerCase();
+  //Get checked categories
+  const checkedCategories = Array.from(checkboxes)
+  .filter((check) => check.checked);
+
+  console.log(checkedCategories);
+}
