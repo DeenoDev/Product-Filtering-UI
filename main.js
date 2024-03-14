@@ -158,4 +158,10 @@ function filterProducts(){
   const checkedCategories = Array.from(checkboxes).filter((check) => check.checked).map((check) => check.id);
 
   //Loop over products and check for matches
+  productElements.forEach((product, index) => {
+  const product = product[index];
+
+  //Check to see if the product matches the search or the checked categories
+  const matchesSearchTerm = product.name.toLowerCase().includes(searchTerm);
+  });
 }
